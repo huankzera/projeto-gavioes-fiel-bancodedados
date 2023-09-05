@@ -1,0 +1,8 @@
+CREATE TABLE aluno_test (
+  ra int,
+  nome varchar (140),
+  data_nasc date(60),
+  endereco varchar (140),
+  email varchar (110)
+  ); 
+  INSERT INTO aluno_test (ra, nome, data_nasc, endereco, email) VALUES ('235910', 'matheus', '21-01-2005', 'alameda ouro preto, ibiuna', 'matheusvallandro5@gmail.com')
