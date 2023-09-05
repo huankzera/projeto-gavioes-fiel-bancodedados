@@ -1,0 +1,12 @@
+CREATE TABLE aluno_test (
+  ra int,
+  nome varchar (140),
+  data_nasc date(60),
+  endereco varchar (140),
+  email varchar (110),
+  ); 
+  INSERT INTO aluno_test (ra, nome, data_nasc, endereco, email) VALUES ('235910', 'matheus', '21-01-2005', 'alameda ouro preto, Ibiuna', 'matheusvallandro5@gmail.com')
+  INSERT INTO aluno_test (ra, nome, data_nasc, endereco, email) VALUES ('235911', 'diego', '23-04-2009', 'alameda ouro preto, Vargem Grande Paulista', 'diegoaugusto@gmail.com')
+  INSERT INTO aluno_test (ra, nome, data_nasc, endereco, email) VALUES ('235914', 'israel', '21-01-2002', 'Jose De Costa, Sorocaba', 'israeljoao5@gmail.com')
+  INSERT INTO aluno_test (ra, nome, data_nasc, endereco, email) VALUES ('235913', 'isabella', '24-09-2004', 'Jurupinga, Sao Roque', 'isabellacamargo@gmail.com')
+  INSERT INTO aluno_test (ra, nome, data_nasc, endereco, email) VALUES ('235912', 'joao', '28-01-2003', 'rua bonifacio, Sao Paulo', 'joaozinho3@gmail.com')
