@@ -1,0 +1,11 @@
+CREATE TABLE colaborador_empresa (
+  cpf int,
+  nome varchar (140),
+  cargo varchar (140),
+  salário decimal (110),
+  ); 
+  INSERT INTO aluno_test (cpf, nome, cargo, salario) VALUES ('287.359.920-00', 'matheus', 'gerente', '13590.89')
+  INSERT INTO aluno_test (cpf, nome, cargo, salario) VALUES ('932.235.430-58', 'diego', 'administrador', '9809.32')
+  INSERT INTO aluno_test (cpf, nome, cargo, salario) VALUES ('864.202.420-88', 'israel', 'funcionario', '3820.93')
+  INSERT INTO aluno_test (cpf, nome, cargo, salario) VALUES ('103.140.500-35', 'isabella', 'funcionario', '3820.93')
+  INSERT INTO aluno_test (cpf, nome, cargo, salario) VALUES ('767.945.770-03', 'joao', 'funcionario', '3820.93')
