@@ -1,0 +1,110 @@
+SLIDE 10
+
+CREATE TABLE petshop (
+  cpf int,
+  email varchar (140),
+  data_nasc date (140),
+  nome varchar (100),
+  especie varchar (100),
+  telefone int,
+  ); 
+  INSERT INTO petshop (cpf, email, data_nasc, nome, especie, telefone) VALUES ('287.359.920-00', 'matheusjose@gmail.com', '21-03-2000', 'matheus', 'viralata', '15993684357')
+
+CREATE TABLE games (
+  cpf int,
+  nome varchar (140),
+  data_nasc date (140),
+  ); 
+  INSERT INTO petshop (cpf, nome, data_nasc) VALUES ('287.359.920-00', 'daniel', '21-03-2000')
+
+
+SLIDE 19
+CREATE TABLE Autor_biblioteca (
+  nome varchar (140),
+  email varchar (140),
+  data_nasc date (140),
+  nacionalidade varchar (100),
+  ); 
+  INSERT INTO petshop (nome, email, data_nasc, nacionalidade) VALUES ('jose', 'jose@gmail.com', '21-06-2000', 'brasileiro')
+
+
+CREATE TABLE Automovel (
+  placa varchar(10) PRIMARY KEY,
+  modelo varchar(100),
+  ano int,
+  montadora varchar(100),
+  site_montadora varchar(255),
+  logotipo_montadora varchar(255)
+);
+
+
+INSERT INTO Automovel (placa, modelo, ano, montadora, site_montadora, logotipo_montadora) VALUES ('ABC123', 'Sedan', 2022, 'MontadoraXYZ', 'https://www.montadoraxyz.com', 'https://www.montadoraxyz.com/logotipo.png');
+
+
+
+CREATE TABLE Produto (
+  nome varchar(100) PRIMARY KEY,
+  preco decimal(10, 2),
+  quantidade_estoque int,
+  marca varchar(100),
+  sac_marca varchar(255),
+  nacionalidade_marca varchar(100)
+);
+
+
+INSERT INTO Produto (nome, preco, quantidade_estoque, marca, sac_marca, nacionalidade_marca) VALUES ('Arroz', 5.99, 100, 'MarcaA', '0800-123-456', 'Brasileira');
+
+
+
+CREATE TABLE Filme (
+  id serial PRIMARY KEY,
+  titulo varchar(100),
+  duracao interval,
+  idioma_original varchar(50),
+  preco decimal(10, 2)
+);
+
+INSERT INTO Filme (titulo, duracao, idioma_original, preco) VALUES ('Filme 1', '02:30:00', 'Inglês', 12.99);
+ 
+
+CREATE TABLE Ator_Atriz (
+  id serial PRIMARY KEY,
+  nome varchar(100),
+  data_nascimento date,
+  nacionalidade varchar(100)
+);
+INSERT INTO Ator_Atriz (nome, data_nascimento, nacionalidade) VALUES ('Ator/Atriz 1', '1990-05-15', 'Brasileiro');
+
+
+CREATE TABLE Diretor (
+  id serial PRIMARY KEY,
+  nome varchar(100),
+  data_nascimento date,
+  nacionalidade varchar(100)
+);
+
+INSERT INTO Diretor (nome, data_nascimento, nacionalidade)VALUES ('Diretor 1', '1985-03-10', 'Americano')
+
+
+CREATE TABLE Filme_Ator_Atriz (
+  filme_id int,
+  ator_atriz_id int,
+  PRIMARY KEY (filme_id, ator_atriz_id),
+  FOREIGN KEY (filme_id) REFERENCES Filme (id),
+  FOREIGN KEY (ator_atriz_id) REFERENCES Ator_Atriz (id)
+);
+
+INSERT INTO Ator_Atriz (nome, data_nascimento, nacionalidade) VALUES ('Ator/Atriz 1', '1990-05-15', 'Brasileiro');
+
+
+
+
+
+
+
+
+
+
+
+
+ 
